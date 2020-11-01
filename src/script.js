@@ -45,3 +45,10 @@
       alert("비밀번호에 아이디가 포함되었습니다.");
     }
   }
+
+    let num = Math.floor(Math.random() * 5)+1;
+    let img = document.getElementById(`img`);
+
+    img.src = `img/m${num}.jpg`;
+   
+  
