@@ -100,23 +100,6 @@ img {
   outline: none;
 }
 
-.title a {
-  text-decoration: none;
-  color: black;
-}
-.title a:link {
-  text-decoration: none;
-  color: black;
-}
-.title a:visited {
-  text-decoration: none;
-  color: black;
-}
-.title a:active {
-  text-decoration: none;
-  color: black;
-}
-
 #com {
   margin: 0 auto;
   width: 960px;

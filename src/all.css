@@ -1,3 +1,7 @@
+body {
+  padding: 0;
+  margin: 0;
+}
 #main {
   /* border: 1px solid #999; */
   margin: 0 auto;
@@ -24,4 +28,44 @@
   margin: 0 auto;
   background-color: #b9baad;
   text-align: center;
+}
+.login {
+  position: relative;
+  right: 40px;
+  border-style: none;
+  background-color: #f7ae9e;
+  margin: 5px;
+}
+.title a {
+  text-decoration: none;
+  color: black;
+}
+.title a:link {
+  text-decoration: none;
+  color: black;
+}
+.title a:visited {
+  text-decoration: none;
+  color: black;
+}
+.title a:active {
+  text-decoration: none;
+  color: black;
+}
+
+.login a {
+  text-decoration: none;
+  color: black;
+}
+.login a:link {
+  text-decoration: none;
+  color: black;
+}
+.login a:visited {
+  text-decoration: none;
+  color: black;
+}
+.login a:active {
+  text-decoration: none;
+  color: black;
 }
