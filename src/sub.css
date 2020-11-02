@@ -1,0 +1,171 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#wrapper {
+  overflow: hidden;
+  background-color: #f6f4f3;
+}
+
+/*      í—¤ë”      */
+
+#header {
+  position: relative;
+  width: 100%;
+  height: 85px;
+  background-color: #f7ae9e;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.title {
+  position: absolute;
+  left: 50px;
+}
+
+.login {
+  position: relative;
+  right: 40px;
+  border-style: none;
+  background-color: #f7ae9e;
+  margin: 5px;
+}
+
+#search {
+  border-bottom: 1px solid black;
+}
+
+/*      ë„¤ë¹„ê²Œì´ì…˜       */
+
+#nav {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid black;
+  background-color: #f6f4f3;
+  text-align: right;
+}
+
+.btn {
+  position: relative;
+  right: 40px;
+  width: 100px;
+  margin: 8px;
+}
+
+/*      ë³¸ë¬¸       */
+
+#banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(to bottom, transparent, black),
+    url(http://image.cine21.com/cine21/poster/2020/0929/55298_5f72f7b07fa74.jpg)
+      no-repeat 0% 30%;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+/*       ë©”ì¸       */
+
+#main {
+  position: relative;
+  width: 960px;
+  height: 1800px;
+  background-color: #ebebeb;
+  margin: 0px auto;
+}
+
+#poster {
+  position: absolute;
+  top: -200px;
+  width: 230px;
+  height: 330px;
+  background-color: white;
+  z-index: 999;
+  padding: 10px;
+}
+
+#info {
+  position: absolute;
+  top: -200px;
+  left: 300px;
+  width: 350px;
+  height: 200px;
+  margin: 0 auto;
+  z-index: 999;
+  color: white;
+}
+
+.info_title {
+  margin: 0;
+}
+
+.info_eng {
+  margin: 0;
+  font-size: 20px;
+}
+
+.age {
+  background-color: #f7d279;
+  border-radius: 3px;
+  color: black;
+  font-weight: bold;
+  font-weight: bold;
+}
+
+#info span {
+  margin-right: 10px;
+}
+
+#summary {
+  position: absolute;
+  top: 30px;
+  left: 300px;
+  width: 350px;
+  height: 150px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.main_title {
+  position: absolute;
+  top: 245px;
+  left: 10px;
+  border-top: 2px solid;
+}
+
+#slide {
+  position: absolute;
+  top: 300px;
+  width: 960px;
+  height: 600px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.video_title {
+  position: absolute;
+  top: 995px;
+  left: 10px;
+  border-top: 2px solid;
+}
+
+#video {
+  position: absolute;
+  top: 1050px;
+  width: 960px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+/*      í‘¸í„°      */
+
+#footer {
+  width: 85%;
+  height: 65px;
+  margin: 0 auto;
+  background-color: #b9baad;
+  text-align: center;
+}
