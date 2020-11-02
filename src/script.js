@@ -2,6 +2,7 @@
   window.onload = function () {
     document.getElementById("notice").style.display = "block";
     document.getElementById("register").style.display = "none";
+    document.getElementById("com").style.display = "none";
   };
 
   // 동의를 모두 체크했는지 확인
@@ -13,6 +14,7 @@
     if (agree_1 && agree_2 && agree_3) {
       document.getElementById("notice").style.display = "none";
       document.getElementById("register").style.display = "block";
+      document.getElementById("com").style.display = "none";
     } else {
       alert("모두 동의해야 가입할 수 있습니다.");
     }
@@ -43,6 +45,10 @@
       alert("같은 문자를 4번 이상 사용하실 수 없습니다.");
     } else if (pass_1.search(id) > -1) {
       alert("비밀번호에 아이디가 포함되었습니다.");
+    }else{
+    document.getElementById("notice").style.display = "none";
+    document.getElementById("register").style.display = "none";
+    document.getElementById("com").style.display = "block";
     }
   }
 
