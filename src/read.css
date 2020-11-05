@@ -4,15 +4,15 @@
   height: 100%;
   overflow: hidden;
 }
-#main #newszone {
+#main .newszone {
   width: 650px;
   text-align: center;
 }
-#newszone ul {
+.newszone ul {
   padding-left: 0;
 }
 
-#newszone .news {
+.newszone .news {
   text-align: left;
   border-bottom: 1px solid #999;
   padding: 10px;
@@ -21,11 +21,11 @@
   padding-left: 0;
 }
 
-#newszone .news:first-child {
+.newszone .news:first-child {
   border-top: 1px solid #999;
 }
 
-#newszone button {
+.newszone button {
   margin-top: 10px;
   margin-bottom: 40px;
 }
