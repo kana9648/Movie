@@ -39,21 +39,70 @@ body {
 /*      ë„¤ë¹„ê²Œì´ì…˜       */
 
 #nav {
-  position: relative;
+  /* position: relative; */
+  overflow: hidden;
   width: 100%;
   height: 40px;
   border-bottom: 1px solid black;
-  background-color: #f6f4f3;
+  background-color: #ebebeb;
   text-align: right;
+  /* float: right; */
 }
-
+.menu {
+  float: right;
+}
 .btn {
-  position: relative;
-  right: 40px;
+  /* position: relative; */
+  /* right: 150px; */
+  /* top: 0px; */
+  float: left;
   width: 100px;
-  margin: 8px;
+  margin: 10px;
+  cursor: pointer;
+  margin: 0;
+  /* padding-top: 10px; */
+  /* width: 100px; */
+  /* height: 30px; */
+  display: inline-block;
+  /* border: 1px solid; */
+  text-align: center;
 }
-
+.btn:hover {
+  background-color: #50403f;
+  width: 100px;
+  height: 40px;
+  color: antiquewhite;
+  border-left: 4px solid antiquewhite;
+  border-right: 4px solid antiquewhite;
+}
+#nav a {
+  text-decoration: none;
+  display: block;
+  padding-top: 10px;
+  width: 100px;
+  height: 40px;
+  /* border: 1px solid; */
+  margin: 0;
+  color: black;
+}
+#nav a:link {
+  text-decoration: none;
+  color: black;
+}
+#nav a:visited {
+  text-decoration: none;
+  color: black;
+}
+#nav a:active {
+  text-decoration: none;
+  color: black;
+}
+#nav a:hover {
+  text-decoration: none;
+  color: antiquewhite;
+  font-weight: bold;
+  font-size: 1.2em;
+}
 /*      ë³¸ë¬¸       */
 
 #banner {

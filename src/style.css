@@ -44,7 +44,9 @@ body {
   margin-left: 40px;
   border: 1px solid #bd7261;
   border-radius: 20px;
-  background-color: #f7ae9e;
+  background-color: #50403f;
+  color: antiquewhite;
+  font-size: 1.2em;
 }
 #sin #Sub:focus {
   outline: none;
@@ -93,7 +95,9 @@ img {
   height: 50px;
   border: 1px solid #bd7261;
   border-radius: 20px;
-  background-color: #f7ae9e;
+  background-color: #50403f;
+  color: antiquewhite;
+  font-size: 1.2em;
 }
 
 #agreeZone button:focus {
@@ -131,7 +135,9 @@ img {
   margin-bottom: 200px;
   border: 1px solid #bd7261;
   border-radius: 20px;
-  background-color: #f7ae9e;
+  background-color: #50403f;
+  color: antiquewhite;
+  font-size: 1.2em;
 }
 
 #com button:focus {

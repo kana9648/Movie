@@ -23,28 +23,28 @@
   function password_check() {
     let pass_1 = document.getElementById("PW").value;
     let pass_2 = document.getElementById("PWcheck").value;
-	let name = document.getElementById("name").value;
-	let date = document.getElementById("date").value;
     let id = document.getElementById("ID").value;
     let email = document.getElementById("Email").value;
+    let name = document.getElementById("name").value;
+    let date = document.getElementById("date").value;
     let exptext = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/;
     let checkNumber = pass_1.search(/[0-9]/g);
     let checkEnglish = pass_1.search(/[a-z]/gi);
 
     if (pass_1 != pass_2) {
       alert("비밀번호가 일치하지 않습니다.");
-    } else if (name == "") {
+    }  else if (name == "") {
       alert("이름을 입력하세요.");
     } else if (date == "") {
       alert("생년월일을 입력하세요");
-	} else if (id == "") {
+	  }else if (id == "") {
       alert("아이디를 입력하세요.");
     } else if (email == "") {
       alert("이메일을 입력하세요.");
     } else if (exptext.test(email) == false) {
       alert("이메일 형식이 틀립니다.");
-    } else if (!/^[a-zA-Z0-9]{8,15}$/.test(pass_1)) {
-      alert("숫자와 영문자 조합으로 8~15자리를 사용해야 합니다.");
+    } else if (!/^[a-zA-Z0-9]{10,15}$/.test(pass_1)) {
+      alert("숫자와 영문자 조합으로 10~15자리를 사용해야 합니다.");
     } else if (checkNumber < 0 || checkEnglish < 0) {
       alert("숫자와 영문자를 혼용하여야 합니다.");
     } else if (/(\w)\1\1\1/.test(pass_1)) {

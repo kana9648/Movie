@@ -29,27 +29,33 @@
   margin-bottom: 200px;
   border: 1px solid #bd7261;
   border-radius: 20px;
-  background-color: #f7ae9e;
   margin-right: 10px;
   margin-left: 10px;
+  background-color: #50403f;
+  color: antiquewhite;
+  font-size: 1.2em;
 }
 
 #login button:focus {
   outline: none;
 }
+
 button a {
   text-decoration: none;
-  color: black;
+  color: antiquewhite;
 }
+
 button a:link {
   text-decoration: none;
-  color: black;
+  color: antiquewhite;
 }
+
 button a:visited {
   text-decoration: none;
-  color: black;
+  color: antiquewhite;
 }
+
 button a:active {
   text-decoration: none;
-  color: black;
+  color: antiquewhite;
 }
