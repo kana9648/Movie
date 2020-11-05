@@ -6,7 +6,10 @@
     <title>read</title>
     <link rel="stylesheet" href="src/all.css" />
     <link rel="stylesheet" href="src/read.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      type="text/javascript"
+    ></script>
   </head>
 
   <body>
@@ -42,6 +45,27 @@
                 url: "http://rss.ohmynews.com/rss/cinema.xml",
                 dataType: "xml",
                 success: function (data) {
+                  var $items = $(data).find("item");
+
+                  if ($items.length > 0) {
+                    $items = $items.slice(0, 10);
+                    var $ulTag = $("<ul/>");
+                    $.each($items, function (i, o) {
+                      var $title = $(o).find("title").text();
+                      var $link = $(o).find("link").text();
+
+                      var $aTag = $("<a/>")
+                        .attr({
+                          href: $link,
+                          target: "_blank",
+                        })
+                        .text($title);
+                      var $liTag = $("<li/>").append($aTag);
+
+                      $ulTag.append($liTag);
+                    });
+                    $("#newszone").append($ulTag);
+                  }
                   console.log(data);
                 },
               });
