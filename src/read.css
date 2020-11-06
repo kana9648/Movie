@@ -125,6 +125,15 @@
   color: antiquewhite;
 }
 
+#sub {
+  width: 230px;
+  /* border: 1px solid black; */
+  float: right;
+  margin-top: 40px;
+  text-align: center;
+  /* overflow: hidden; */
+  /* position: sticky; */
+}
 .newszone button {
   width: 120px;
   height: 50px;
