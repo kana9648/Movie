@@ -43,7 +43,7 @@
           <script type="text/javascript">
             $(function () {
               $.ajax({
-                url: "src/read.php",
+                url: "http://rss.ohmynews.com/rss/gyeonggi.xml",
                 dataType: "xml",
                 success: function (data) {
                   var $items = $(data).find("item");
