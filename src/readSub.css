@@ -38,7 +38,7 @@
   color: #50403f;
 }
 
-#subinfo img {
+#subinfo .subing {
   padding: 0;
   margin: 0;
   /* border-radius: 15px; */
@@ -75,4 +75,8 @@ a:active {
 
 iframe {
   text-align: center;
+}
+#img {
+  float: left;
+  margin: 5px;
 }

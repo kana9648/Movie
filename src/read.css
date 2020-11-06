@@ -120,6 +120,10 @@
   text-decoration: none;
   color: #50403f;
 }
+.newsss a:hover {
+  background-color: #50403f;
+  color: antiquewhite;
+}
 
 .newszone button {
   width: 120px;
