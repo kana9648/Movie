@@ -44,6 +44,7 @@
             $(function () {
               $.ajax({
                 url: "read.php",
+                type: "get",
                 dataType: "xml",
                 success: function (data) {
                   var $items = $(data).find("item");
