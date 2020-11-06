@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <title> main </title>
-    <link rel="stylesheet" href="src/sub.css" />
-    <link rel="stylesheet" href="src/all.css" />
+    <link rel="stylesheet" href="src/shape.css" />
+    <link rel="stylesheet" href="src/all.css" type="text/css" />
+    <link rel="stylesheet" href="src/sub.css" type="text/css" />
+
     <body>
       <div id="wrapper">
         <header id="header">
@@ -24,9 +26,9 @@
         </header>
         <nav id="nav">
           <div class="menu">
-            <span class="btn"><a href="sub.html">게시판1</a></span>
-            <span class="btn"><a href="read.html">게시판2</a></span>
-            <span class="btn"><a>게시판3</a></span>
+            <span class="btn"><a href="sub.html">영화</a></span>
+            <span class="btn"><a href="read.html">자유</a></span>
+            <span class="btn"><a>리뷰</a></span>
           </div>
         </nav>
 
@@ -50,14 +52,67 @@
               <span>상영시간:110분</span><br />
               <span>개봉일:2020-10-21</span>
               <span>누적관객:931,714명</span><br />
-              <span>감독:이종필</span><br />
+              <span
+                >감독:<a href="http://kimhappy93.dothome.co.kr/person.html"
+                  >이종필</a
+                ></span
+              ><br />
               <span>출연:고아성(이자영),이솜(정유나)</span>
             </p></div
           >
 
-          <section id="summary">줄거리</section>
-          <h3 class="main_title">포토</h3>
-          <section id="slide">사진 슬라이드</section>
+          <section id="summary">
+            <h3
+              >마이 드림 이즈 커리어우먼”<br />
+              1995년, 토익 600점만 넘기면 대리가 될 수 있다!</h3
+            >
+            <p
+              >입사 8년차 동기인 말단 여직원들이 ‘삼진그룹 영어토익반’에 모인다!
+              실무 능력 퍼펙트, 현실은 커피 타기 달인인 생산관리 3부 오지랖
+              ‘이자영’(고아성),</p
+            >
+            <a href="#">more</a>
+          </section>
+
+          <!-- 별점/평 -->
+          <section id="star">
+            <h4>별점주기</h4>
+            <h3>0</h3>
+            <div id="star_img">
+              <img
+                src="https://static.vecteezy.com/system/protected/files/001/189/063/vecteezy_star-rounded_1189063.png"
+                width="24px"
+                height="24px"
+              />
+              <img
+                src="https://static.vecteezy.com/system/protected/files/001/189/063/vecteezy_star-rounded_1189063.png"
+                width="24px"
+                height="24px"
+              />
+              <img
+                src="https://static.vecteezy.com/system/protected/files/001/189/063/vecteezy_star-rounded_1189063.png"
+                width="24px"
+                height="24px"
+              />
+              <img
+                src="https://static.vecteezy.com/system/protected/files/001/189/063/vecteezy_star-rounded_1189063.png"
+                width="24px"
+                height="24px"
+              />
+              <img
+                src="https://static.vecteezy.com/system/protected/files/001/189/063/vecteezy_star-rounded_1189063.png"
+                width="24px"
+                height="24px"
+              />
+            </div>
+            <p class="review_button1">리뷰남기기</p>
+          </section>
+
+          <!-- 사진 -->
+          <h3 class="slide_title">포토</h3>
+          <section id="slide"> </section>
+
+          <!-- 영상 -->
           <h3 class="video_title">공식예고편</h3>
           <section id="video">
             <iframe
@@ -69,8 +124,196 @@
               allowfullscreen
             ></iframe>
           </section>
+
+          <!-- 네티즌 리뷰 -->
+          <h3 class="review_title">네티즌 리뷰</h3>
+          <p class="review_button2">리뷰남기기</p>
+          <section id="review">
+            <ul id="review_ul">
+              <li>
+                <div id="id">abcdef</div>
+                <div id="r_star">
+                  <img
+                    src="https://static.vecteezy.com/system/protected/files/001/189/063/vecteezy_star-rounded_1189063.png"
+                    width="15px"
+                    height="15px"
+                  />
+                  <img
+                    src="https://static.vecteezy.com/system/protected/files/001/189/063/vecteezy_star-rounded_1189063.png"
+                    width="15px"
+                    height="15px"
+                  />
+                  <img
+                    src="https://static.vecteezy.com/system/protected/files/001/189/063/vecteezy_star-rounded_1189063.png"
+                    width="15px"
+                    height="15px"
+                  />
+                  <img
+                    src="https://static.vecteezy.com/system/protected/files/001/189/063/vecteezy_star-rounded_1189063.png"
+                    width="15px"
+                    height="15px"
+                  />
+                  <img
+                    src="https://static.vecteezy.com/system/protected/files/001/189/063/vecteezy_star-rounded_1189063.png"
+                    width="15px"
+                    height="15px"
+                  />
+                </div>
+                <div id="date">2020-11-04 17:48:20</div>
+                <div id="comment"
+                  >통쾌하면서 공감과 재미를 선사한 사회영화였습니다! 1995년
+                  X세대 커리어 우먼들의 직장생활과 대기업 내에서 벌어진 공장
+                  폐수와 페놀 누출 사건, 기업을 불법적으로 인수합병하려는 외국인
+                  기업 사냥꾼들의 음모에 대한 진실을 밝히려는 커리어 우먼들의
+                  외침과 투쟁을 잘 표현하여 X세대의 공감을 자아냈습니다!
+                  전반적으로 공감과 통쾌한 사이다까지 전부 좋았으니, 별 4개 반
+                  드립니다!!</div
+                >
+              </li>
+              <li>
+                <div id="id">abcdef</div>
+                <div id="r_star">
+                  <img
+                    src="https://static.vecteezy.com/system/protected/files/001/189/063/vecteezy_star-rounded_1189063.png"
+                    width="15px"
+                    height="15px"
+                  />
+                  <img
+                    src="https://static.vecteezy.com/system/protected/files/001/189/063/vecteezy_star-rounded_1189063.png"
+                    width="15px"
+                    height="15px"
+                  />
+                  <img
+                    src="https://static.vecteezy.com/system/protected/files/001/189/063/vecteezy_star-rounded_1189063.png"
+                    width="15px"
+                    height="15px"
+                  />
+                  <img
+                    src="https://static.vecteezy.com/system/protected/files/001/189/063/vecteezy_star-rounded_1189063.png"
+                    width="15px"
+                    height="15px"
+                  />
+                  <img
+                    src="https://static.vecteezy.com/system/protected/files/001/189/063/vecteezy_star-rounded_1189063.png"
+                    width="15px"
+                    height="15px"
+                  />
+                </div>
+                <div id="date">2020-11-04 17:48:20</div>
+                <div id="comment"
+                  >통쾌하면서 공감과 재미를 선사한 사회영화였습니다! 1995년
+                  X세대 커리어 우먼들의 직장생활과 대기업 내에서 벌어진 공장
+                  폐수와 페놀 누출 사건, 기업을 불법적으로 인수합병하려는 외국인
+                  기업 사냥꾼들의 음모에 대한 진실을 밝히려는 커리어 우먼들의
+                  외침과 투쟁을 잘 표현하여 X세대의 공감을 자아냈습니다!
+                  전반적으로 공감과 통쾌한 사이다까지 전부 좋았으니, 별 4개 반
+                  드립니다!!</div
+                >
+              </li>
+              <li>
+                <div id="id">abcdef</div>
+                <div id="r_star">
+                  <img
+                    src="https://static.vecteezy.com/system/protected/files/001/189/063/vecteezy_star-rounded_1189063.png"
+                    width="15px"
+                    height="15px"
+                  />
+                  <img
+                    src="https://static.vecteezy.com/system/protected/files/001/189/063/vecteezy_star-rounded_1189063.png"
+                    width="15px"
+                    height="15px"
+                  />
+                  <img
+                    src="https://static.vecteezy.com/system/protected/files/001/189/063/vecteezy_star-rounded_1189063.png"
+                    width="15px"
+                    height="15px"
+                  />
+                  <img
+                    src="https://static.vecteezy.com/system/protected/files/001/189/063/vecteezy_star-rounded_1189063.png"
+                    width="15px"
+                    height="15px"
+                  />
+                  <img
+                    src="https://static.vecteezy.com/system/protected/files/001/189/063/vecteezy_star-rounded_1189063.png"
+                    width="15px"
+                    height="15px"
+                  />
+                </div>
+                <div id="date">2020-11-04 17:48:20</div>
+                <div id="comment"
+                  >통쾌하면서 공감과 재미를 선사한 사회영화였습니다! 1995년
+                  X세대 커리어 우먼들의 직장생활과 대기업 내에서 벌어진 공장
+                  폐수와 페놀 누출 사건, 기업을 불법적으로 인수합병하려는 외국인
+                  기업 사냥꾼들의 음모에 대한 진실을 밝히려는 커리어 우먼들의
+                  외침과 투쟁을 잘 표현하여 X세대의 공감을 자아냈습니다!
+                  전반적으로 공감과 통쾌한 사이다까지 전부 좋았으니, 별 4개 반
+                  드립니다!!</div
+                >
+              </li>
+              <li>
+                <div id="id">abcdef</div>
+                <div id="r_star">
+                  <img
+                    src="https://static.vecteezy.com/system/protected/files/001/189/063/vecteezy_star-rounded_1189063.png"
+                    width="15px"
+                    height="15px"
+                  />
+                  <img
+                    src="https://static.vecteezy.com/system/protected/files/001/189/063/vecteezy_star-rounded_1189063.png"
+                    width="15px"
+                    height="15px"
+                  />
+                  <img
+                    src="https://static.vecteezy.com/system/protected/files/001/189/063/vecteezy_star-rounded_1189063.png"
+                    width="15px"
+                    height="15px"
+                  />
+                  <img
+                    src="https://static.vecteezy.com/system/protected/files/001/189/063/vecteezy_star-rounded_1189063.png"
+                    width="15px"
+                    height="15px"
+                  />
+                  <img
+                    src="https://static.vecteezy.com/system/protected/files/001/189/063/vecteezy_star-rounded_1189063.png"
+                    width="15px"
+                    height="15px"
+                  />
+                </div>
+                <div id="date">2020-11-04 17:48:20</div>
+                <div id="comment"
+                  >통쾌하면서 공감과 재미를 선사한 사회영화였습니다! 1995년
+                  X세대 커리어 우먼들의 직장생활과 대기업 내에서 벌어진 공장
+                  폐수와 페놀 누출 사건, 기업을 불법적으로 인수합병하려는 외국인
+                  기업 사냥꾼들의 음모에 대한 진실을 밝히려는 커리어 우먼들의
+                  외침과 투쟁을 잘 표현하여 X세대의 공감을 자아냈습니다!
+                  전반적으로 공감과 통쾌한 사이다까지 전부 좋았으니, 별 4개 반
+                  드립니다!!</div
+                >
+              </li>
+            </ul>
+          </section>
+          <!--         페이지 리스트 영역 -->
+          <div id="pageList">
+            <ul class="pagination">
+              <li
+                ><span class="prevIcon"
+                  ><a href="#" class="prev"><!--이전--></a></span
+                ></li
+              >
+              <li class="pageOn"><a href="#" class="pageNum">1</a></li>
+              <li><a href="#" class="pageNum">2</a></li>
+              <li><a href="#" class="pageNum">3</a></li>
+              <li><a href="#" class="pageNum">4</a></li>
+              <li><a href="#" class="pageNum">5</a></li>
+              <li
+                ><span class="nextIcon"
+                  ><a href="#" class="next"><!--다음--></a></span
+                ></li
+              >
+            </ul>
+          </div>
         </div>
-        <div id="footer"> footer </div>
+        <div id="footer"> copyright@ </div>
       </div>
     </body>
   </head>
