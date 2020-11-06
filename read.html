@@ -43,7 +43,7 @@
           <script type="text/javascript">
             $(function () {
               $.ajax({
-                url: "http://www.yonhapnewstv.co.kr/category/news/culture/feed/",
+                url: "src/read.php",
                 dataType: "xml",
                 success: function (data) {
                   var $items = $(data).find("item");
