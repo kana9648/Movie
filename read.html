@@ -39,35 +39,30 @@
           <div class="newss"></div>
           <script type="text/javascript">
             $(function () {
+              var href = "http://rss.ohmynews.com/rss/media.xml";
               $.ajax({
-                type: "get",
-                url: "read.php",
-                dataType: "xml",
-                success: function (data) {
-                  var $items = $(data).find("item");
+                url: href,
+                dataType: "jsonp",
+              }).done(function myTest(data) {
+                if (data.length > 0) {
+                  var $table = $("<table />");
+                  data.forEach(function (o) {
+                    $id = o.id;
+                    $name = o.name;
+                    $email = o.email;
 
-                  if ($items.length > 0) {
-                    $items = $items.slice(0, 10);
-                    var $ulTag = $("<ul />");
-                    $.each($items, function (i, o) {
-                      var $title = $(o).find("title").text();
-                      var $link = $(o).find("link").text();
+                    var trTag = $("<tr />");
+                    trTag.append(
+                      $("<td/>").text($id),
+                      $("<td/>").text($name),
+                      $("<td/>").text($email)
+                    );
 
-                      var $aTag = $("<a />")
-                        .attr({
-                          href: $link,
-                          target: "_blank",
-                        })
-                        .text($title);
+                    $table.append(trTag);
+                  });
 
-                      var $liTag = $("<li />").append($aTag);
-
-                      $ulTag.append($liTag);
-                    });
-
-                    $(".newss").appendTo($ulTag);
-                  }
-                },
+                  $(".newss").append($table);
+                }
               });
             });
           </script>
