@@ -1,9 +1,0 @@
-$(function(){
-    $ajax({
-        url:"http://rss.ohmynews.com/rss/cinema.xml",
-        dataType:"xml",
-        success:function(data){
-            console.log(data);
-        }
-    });
-});

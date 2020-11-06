@@ -39,44 +39,21 @@
       </nav>
       <div id="main">
         <div class="newszone">
-          <h1>News</h1>
-          <div class="newss"></div>
-          <script type="text/javascript">
-            $(function () {
-              $.ajax({
-                type: "get",
-                url: "http://rss.ohmynews.com/rss/media.xml",
-                dataType: "xml",
-                success: function (data) {
-                  var $items = $(data).find("item");
+          <div class="newss">
+            <h1>게시판메인</h1>
+            <ul>
+              <li class="news"><a href="">test</a></li>
+              <li class="news"><a href="">test</a></li>
+              <li class="news"><a href="">test</a></li>
+              <li class="news"><a href="">test</a></li>
+              <li class="news"><a href="">test</a></li>
+              <li class="news"><a href="">test</a></li>
+              <li class="news"><a href="">test</a></li>
+            </ul>
 
-                  if ($items.length > 0) {
-                    $items = $items.slice(0, 10);
-                    var $ulTag = $("<ul/>");
-                    $.each($items, function (i, o) {
-                      var $title = $(o).find("title").text();
-                      var $link = $(o).find("link").text();
-
-                      var $aTag = $("<a/>")
-                        .attr({
-                          href: $link,
-                          target: "_blank",
-                        })
-                        .text($title);
-
-                      var $liTag = $("<li/>").append($aTag);
-
-                      $ulTag.append($liTag);
-                    });
-                    $(".newss").append($ulTag);
-                  }
-                },
-              });
-            });
-          </script>
-
-          <button>이전</button>
-          <button>다음</button>
+            <button>이전</button>
+            <button>다음</button>
+          </div>
         </div>
         <div id="userinfo"> </div>
       </div>
