@@ -1,0 +1,129 @@
+#main {
+  width: 960px;
+  margin: 0 auto;
+  height: 100%;
+  overflow: hidden;
+}
+#main .freezone {
+  width: 750px;
+  text-align: center;
+  float: left;
+  border: 2px solid rgba(0, 0, 0, 0.392);
+  border-right: none;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.freezone ul {
+  padding-left: 0;
+}
+
+.freezone .frechet {
+  text-align: left;
+  border-bottom: 1px solid #999;
+  padding: 10px;
+  font-size: 1.2em;
+  list-style: none;
+  padding-left: 0;
+}
+
+.freezone .frechet:first-child {
+  border-top: 1px solid #999;
+}
+
+.free h1 {
+  color: #50403f;
+}
+
+.free a {
+  text-align: left;
+  text-decoration: none;
+  color: #50403f;
+}
+.free a {
+  text-decoration: none;
+  color: #50403f;
+}
+.free a:link {
+  text-decoration: none;
+  color: #50403f;
+}
+.free a:visited {
+  text-decoration: none;
+  color: #50403f;
+}
+.free a:active {
+  text-decoration: none;
+  color: #50403f;
+}
+.free a:hover {
+  background-color: #50403f;
+  color: antiquewhite;
+}
+
+#subuser {
+  width: 150px;
+  height: 300px;
+  border: 1px solid black;
+  float: right;
+  margin-top: 40px;
+  text-align: center;
+  border: 2px solid rgba(0, 0, 0, 0.392);
+  border-left: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  /* overflow: hidden; */
+  /* position: sticky; */
+}
+#subuser #user {
+  /* margin-top: 10px; */
+}
+#subuser button {
+  padding: 0;
+  margin-top: 10px;
+  width: 60px;
+  height: 60px;
+  background-color: #50403f4b;
+  border-radius: 10px;
+  border: none;
+}
+#subuser button:first-child {
+  width: 130px;
+}
+
+#subuser button:focus {
+  outline: none;
+}
+
+.freezone button {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  width: 120px;
+  height: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 15px;
+  border: 1px solid #50403f;
+  background-color: #50403f;
+  color: antiquewhite;
+  font-size: 1.2em;
+}
+button a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+button a:link {
+  text-decoration: none;
+  color: antiquewhite;
+}
+button a:visited {
+  text-decoration: none;
+  color: antiquewhite;
+}
+button a:active {
+  text-decoration: none;
+  color: antiquewhite;
+}
