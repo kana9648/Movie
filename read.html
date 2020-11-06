@@ -42,14 +42,33 @@
           <div class="newss"></div>
           <script type="text/javascript">
             $(function () {
-              var href =
-                "https://news.google.com/rss/search?hl=ko&gl=KR&ceid=KR%3Ako&oc=11&q=영화";
               $.ajax({
-                typ:"get",
-                url: href,
-                dataType: "jsonp",
-              }).done(function myFnc(data) {
-                console.log(data);
+                url: "read.php",
+                dataType: "xml",
+                success: function (data) {
+                  var $items = $(data).find("item");
+
+                  if ($items.length > 0) {
+                    $items = $items.slice(0, 10);
+                    var $ulTag = $("<ul />");
+                    $.each($items, function (i, o) {
+                      var $title = $(o).find("title").text();
+                      var $link = $(o).find("link").text();
+
+                      var $aTag = $("<a />")
+                        .attr({
+                          href: $link,
+                          target: "_blank",
+                        })
+                        .text($title);
+
+                      var $liTag = $("<li />").append($aTag);
+
+                      $ulTag.append($liTag);
+                    });
+                    $(".wrap").append($ulTag);
+                  }
+                },
               });
             });
           </script>
