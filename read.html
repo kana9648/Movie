@@ -43,7 +43,6 @@
           <script type="text/javascript">
             $(function () {
               $.ajax({
-                type: "get",
                 url: "read.php",
                 dataType: "xml",
                 success: function (data) {
@@ -67,6 +66,7 @@
 
                       $ulTag.append($liTag);
                     });
+
                     $(".newss").append($ulTag);
                   }
                 },
