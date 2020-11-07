@@ -97,3 +97,46 @@ body {
   /* list-style: none; */
   padding-left: 0;
 }
+
+#main .readzone {
+  width: 320px;
+  text-align: center;
+  float: left;
+  border: 2px solid rgba(0, 0, 0, 0.392);
+  /* border-right: none; */
+  /* margin-top: 40px; */
+  /* margin-bottom: 30px; */
+  padding: 15px;
+  border-radius: 15px;
+  margin: 0;
+  height: 420px;
+}
+#main .mainfreezone {
+  width: 320px;
+  text-align: center;
+  float: left;
+  border: 2px solid rgba(0, 0, 0, 0.392);
+  /* border-right: none; */
+  /* margin-top: 40px; */
+  /* margin-bottom: 30px; */
+  padding: 15px;
+  border-radius: 15px;
+  margin: 0;
+  height: 420px;
+}
+.mainfreezone ol {
+  padding-left: 30px;
+}
+
+.mainfreezone .frechet {
+  text-align: left;
+  border-bottom: 1px solid #999;
+  padding: 10px;
+  font-size: 1.2em;
+  /* list-style: inside; */
+  padding-left: 0;
+}
+
+.mainfreezone .frechet:first-child {
+  border-top: 1px solid #999;
+}
