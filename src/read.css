@@ -81,9 +81,17 @@
   color: antiquewhite;
   font-size: 1.2em;
 }
+.newszone button:focus {
+  outline: none;
+}
+.newszone button:hover {
+  background-color: antiquewhite;
+  color: #50403f;
+}
 button a {
   text-decoration: none;
   color: antiquewhite;
+  font-weight: bold;
 }
 button a:link {
   text-decoration: none;
@@ -96,4 +104,7 @@ button a:visited {
 button a:active {
   text-decoration: none;
   color: antiquewhite;
+}
+button a:hover {
+  color: #50403f;
 }

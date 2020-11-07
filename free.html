@@ -7,7 +7,7 @@
       http-equiv="Content-Security-Policy"
       content="upgrade-insecure-requests"
     />
-    <title>read</title>
+    <title>자유게시판</title>
     <link rel="stylesheet" href="src/all.css" />
     <link rel="stylesheet" href="src/free.css" />
     <link rel="stylesheet" href="src/readSub.css" />
@@ -16,6 +16,7 @@
   </head>
 
   <body>
+    <script src="src/popup.js"></script>
     <div id="wrapper">
       <header id="header">
         <h1 class="title"><a href="index.html">MOVIE</a></h1>
@@ -35,7 +36,8 @@
       <nav id="nav">
         <div class="menu">
           <span class="btn"><a href="sub.html">영화</a></span>
-          <span class="btn"><a href="read.html">자유</a></span>
+          <span class="btn"><a href="read.html">기사</a></span>
+          <span class="btn"><a href="free.html">자유</a></span>
           <span class="btn"><a>리뷰</a></span>
         </div>
       </nav>
@@ -43,27 +45,49 @@
         <div class="freezone">
           <div class="free">
             <h1>자유게시판</h1>
-            <ul>
-              <li class="frechet"><a href=""></a></li>
-              <li class="frechet"><a href=""></a></li>
-              <li class="frechet"><a href=""></a></li>
-              <li class="frechet"><a href=""></a></li>
-              <li class="frechet"><a href=""></a></li>
-              <li class="frechet"><a href=""></a></li>
-              <li class="frechet"><a href=""></a></li>
-            </ul>
+            <ol reversed>
+              <li class="frechet"><a href="write.html">test</a></li>
+              <li class="frechet"><a href="write.html">test</a></li>
+              <li class="frechet"><a href="write.html">test</a></li>
+              <li class="frechet"><a href="write.html">test</a></li>
+              <li class="frechet"><a href="write.html">test</a></li>
+              <li class="frechet"><a href="write.html">test</a></li>
+              <li class="frechet"><a href="write.html">test</a></li>
+            </ol>
           </div>
-          <button>이전</button>
-          <button>다음</button>
+          <button><a href="">이전</a></button>
+          <button><a href="">다음</a></button>
         </div>
         <div id="subuser">
-          <button
-            ><img src="img/icon.png" alt="" width="50px" id="user"
+          <button class="userbtn"
+            ><img
+              src="img/user.jpg"
+              alt=""
+              width="120px"
+              height="110px"
+              id="user"
+              onclick="popup()"
           /></button>
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
+          <button class="writebtn">
+            <a href="writepage.html">
+              <img src="img/write.png" alt="" width="50px" id="write" />
+            </a>
+          </button>
+          <button class="listbtn">
+            <a href="list.html">
+              <img src="img/list.png" alt="" width="50px" id="list"
+            /></a>
+          </button>
+          <button class="starbtn">
+            <a href="star.html">
+              <img src="img/star.png" alt="" width="50px" id="star" />
+            </a>
+          </button>
+          <button class="userinfobtn">
+            <a href="userinfo.html">
+              <img src="img/icon.png" alt="" id="userinfo" width="50px" />
+            </a>
+          </button>
         </div>
       </div>
       <div id="footer"> footer </div>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <title>내가 즐겨찾기한 게시물</title>
+    <link rel="stylesheet" href="src/all.css" />
+    <link rel="stylesheet" href="src/free.css" />
+    <link rel="stylesheet" href="src/readSub.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="src/read.js"></script> -->
+  </head>
+
+  <body>
+    <script src="src/popup.js"></script>
+    <div id="wrapper">
+      <header id="header">
+        <h1 class="title"><a href="index.html">MOVIE</a></h1>
+        <button type="button" class="login">
+          <a href="login.html">로그인</a>
+        </button>
+        <button type="button" class="login">
+          <a href="in.html">회원가입</a>
+        </button>
+        <input
+          type="search"
+          id="search"
+          class="login"
+          placeholder="검색어를 입력"
+        />
+      </header>
+      <nav id="nav">
+        <div class="menu">
+          <span class="btn"><a href="sub.html">영화</a></span>
+          <span class="btn"><a href="read.html">기사</a></span>
+          <span class="btn"><a href="free.html">자유</a></span>
+          <span class="btn"><a>리뷰</a></span>
+        </div>
+      </nav>
+      <div id="main">
+        <div class="freezone">
+          <div class="free">
+            <h1>내가 즐겨찾기한 게시물</h1>
+            <ol reversed>
+              <!-- <li class="frechet"><a href="list.html">test</a></li> -->
+              <li class="frechet"><a href="write.html">test</a></li>
+              <li class="frechet"><a href="write.html">test</a></li>
+              <li class="frechet"><a href="write.html">test</a></li>
+              <li class="frechet"><a href="write.html">test</a></li>
+              <li class="frechet"><a href="write.html">test</a></li>
+              <li class="frechet"><a href="write.html">test</a></li>
+            </ol>
+          </div>
+          <button><a href="">이전</a></button>
+          <button><a href="">다음</a></button>
+        </div>
+        <div id="subuser">
+          <button class="userbtn"
+            ><img
+              src="img/user.jpg"
+              alt=""
+              width="120px"
+              height="110px"
+              id="user"
+              onclick="popup()"
+          /></button>
+          <button class="writebtn">
+            <a href="writepage.html">
+              <img src="img/write.png" alt="" width="50px" id="write" />
+            </a>
+          </button>
+          <button class="listbtn">
+            <a href="list.html">
+              <img src="img/list.png" alt="" width="50px" id="list"
+            /></a>
+          </button>
+          <button class="starbtn">
+            <a href="star.html">
+              <img src="img/star.png" alt="" width="50px" id="star" />
+            </a>
+          </button>
+          <button class="userinfobtn">
+            <a href="userinfo.html">
+              <img src="img/icon.png" alt="" id="userinfo" width="50px" />
+            </a>
+          </button>
+        </div>
+      </div>
+      <div id="footer"> footer </div>
+    </div>
+  </body>
+</html>

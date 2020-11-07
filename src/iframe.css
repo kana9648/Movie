@@ -1,0 +1,62 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+#main .freezone {
+  width: 320px;
+  text-align: center;
+  float: left;
+  border: 2px solid rgba(0, 0, 0, 0.392);
+  /* border-right: none; */
+  /* margin-top: 40px; */
+  /* margin-bottom: 30px; */
+  padding: 15px;
+  border-radius: 15px;
+  margin: 0;
+}
+.freezone ol {
+  padding-left: 30px;
+}
+
+.freezone .frechet {
+  text-align: left;
+  border-bottom: 1px solid #999;
+  padding: 10px;
+  font-size: 1.2em;
+  /* list-style: inside; */
+  padding-left: 0;
+}
+
+.freezone .frechet:first-child {
+  border-top: 1px solid #999;
+}
+
+.free h2 {
+  color: #50403f;
+}
+
+.free a {
+  text-align: left;
+  text-decoration: none;
+  color: #50403f;
+}
+.free a {
+  text-decoration: none;
+  color: #50403f;
+}
+.free a:link {
+  text-decoration: none;
+  color: #50403f;
+}
+.free a:visited {
+  text-decoration: none;
+  color: #50403f;
+}
+.free a:active {
+  text-decoration: none;
+  color: #50403f;
+}
+.free a:hover {
+  background-color: #50403f;
+  color: antiquewhite;
+}

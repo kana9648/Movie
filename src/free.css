@@ -17,8 +17,8 @@
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-.freezone ul {
-  padding-left: 0;
+.freezone ol {
+  padding-left: 30px;
 }
 
 .freezone .frechet {
@@ -26,7 +26,7 @@
   border-bottom: 1px solid #999;
   padding: 10px;
   font-size: 1.2em;
-  list-style: none;
+  /* list-style: inside; */
   padding-left: 0;
 }
 
@@ -77,9 +77,14 @@
   border-bottom-right-radius: 15px;
   /* overflow: hidden; */
   /* position: sticky; */
+  margin-bottom: 40px;
 }
 #subuser #user {
   /* margin-top: 10px; */
+  border-radius: 10px;
+}
+#subuser .userbtn {
+  height: 120px;
 }
 #subuser button {
   padding: 0;
@@ -94,8 +99,12 @@
   width: 130px;
 }
 
-#subuser button:focus {
+button:focus {
   outline: none;
+}
+#subuser button:hover {
+  outline: none;
+  border: 2px solid #50403f;
 }
 
 .freezone button {
@@ -110,6 +119,7 @@
   background-color: #50403f;
   color: antiquewhite;
   font-size: 1.2em;
+  padding: 0;
 }
 button a {
   text-decoration: none;
@@ -126,4 +136,77 @@ button a:visited {
 button a:active {
   text-decoration: none;
   color: antiquewhite;
+}
+#write {
+  margin: 0;
+}
+
+fieldset {
+  border-radius: 15px;
+  text-align: left;
+  padding: 20px;
+}
+legend {
+  /* border-radius: 15px; */
+  text-align: center;
+}
+.freetextzone {
+  /* border: 1px solid; */
+  width: 680px;
+  margin: 0 auto;
+}
+#textname {
+  width: 680px;
+  margin-bottom: 10px;
+}
+.textnamee {
+  color: #50403f;
+}
+#textzone {
+  margin-top: 10px;
+  resize: none;
+}
+table {
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+td {
+  width: 115px;
+  border: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+td:nth-child(1) {
+  background-color: #7e706f;
+  color: antiquewhite;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+td:nth-child(3) {
+  background-color: #7e706f;
+  color: antiquewhite;
+  /* border-top-left-radius: 15px; */
+  /* border-bottom-left-radius: 15px; */
+}
+td:nth-child(5) {
+  background-color: #7e706f;
+  color: antiquewhite;
+  /* border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px; */
+}
+
+iframe {
+  margin-top: 20px;
+  width: 360px;
+  float: left;
+  margin-left: 15px;
+  margin-right: 0px;
+  height: 430px;
+  /* border: 1px solid; */
+}
+
+iframe:nth-child(2) {
+  margin-left: 8px;
 }
