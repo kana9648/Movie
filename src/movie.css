@@ -1,0 +1,141 @@
+/*      메인   */
+
+#main {
+  position: relative;
+  width: 1000px;
+  background-color: #ebebeb;
+  margin: 0 auto;
+}
+
+/*작업부분*/
+
+.nav_wrap {
+  display: block;
+  width: 100%;
+  margin: 20px auto;
+  box-sizing: border-box;
+}
+
+.nav_list {
+  justify-content: center;
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: 4px;
+}
+
+.nav_wrap li {
+  display: inline-block;
+  text-align: center;
+}
+
+.nav-link {
+  display: block;
+  padding: 10px 15px;
+  font-size: 24px;
+  color: #9b7f72;
+  text-decoration: none;
+  background-color: transparent;
+  border-radius: 4px;
+}
+
+.nav-link.active {
+  color: #f7d279;
+  background-color: #9b7f72;
+}
+
+.movie_list {
+  margin-top: 30px;
+  padding: 0;
+}
+
+.movie_list > li {
+  display: inline-block;
+  list-style: none;
+  width: 210px;
+  height: 380px;
+  margin: 0 17px 30px;
+}
+
+.image_movie {
+  width: 210px;
+  height: 320px;
+  position: relative;
+  background-color: cadetblue;
+}
+
+.hover_font {
+  position: absolute;
+  top: 170px;
+  left: 18px;
+}
+
+.hover_font > p {
+  text-decoration: none;
+  margin: 0;
+  size: 16px;
+}
+
+.image_movie > .movie_more {
+  position: absolute;
+  bottom: 15px;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 14px;
+  left: 68px;
+  margin: 0;
+}
+
+.info_movie {
+  padding: 20px 0;
+}
+
+.paging {
+  display: block;
+  width: 100%;
+  margin: 20px auto;
+  box-sizing: border-box;
+}
+
+.pagination {
+  justify-content: center;
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: 4px;
+}
+
+li {
+  display: list-item;
+}
+
+.page-item:first-child .page-link {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #9b7f72;
+  background-color: #fff;
+  border: 1px solid #f7d279;
+}
+
+.page-item:last-child .page-link {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.pagination a:hover {
+  background-color: #50403f;
+  color: #f7d279;
+}
+
+.paging a {
+  text-decoration: none;
+}
