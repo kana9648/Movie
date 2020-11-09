@@ -91,6 +91,7 @@ body {
   /* float: right; */
 }
 .menu {
+  margin:0;
   float: right;
 }
 .btn {
