@@ -89,6 +89,9 @@
   color: #50403f;
 }
 button a {
+  line-height: 40px;
+  /* border: 1px solid; */
+  height: 40px;
   text-decoration: none;
   color: antiquewhite;
   font-weight: bold;
@@ -106,5 +109,6 @@ button a:active {
   color: antiquewhite;
 }
 button a:hover {
+  background-color: antiquewhite;
   color: #50403f;
 }
