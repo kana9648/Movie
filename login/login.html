@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/all.css" />
+    <link rel="stylesheet" href="../src/login.css" />
+  </head>
+  <body>
+    <div id="main">
+      <header id="header">
+        <h1 class="title"><a href="../main.html" class="title">MOVIE</a></h1>
+      </header>
+      <div id="login">
+        <h1>로그인</h1>
+        <label for="ID" style="margin-right: 42px">아이디</label>
+        <input type="text" name="ID" id="ID" />
+        <br />
+        <label for="PW">비밀번호</label>
+        <input type="password" name="PW" id="PW" />
+        <br />
+        <button onclick="login_check()">로그인</button>
+        <button> <a href="../sign/sign.html">회원가입</a></button>
+      </div>
+      <div id="footer"></div>
+      <script src="../src/login.js"></script>
+    </div>
+  </body>
+</html>

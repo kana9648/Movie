@@ -1,0 +1,116 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#wrapper {
+  overflow: hidden;
+  background-color: #fdfdfd;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #333;
+}
+
+/*
+a:link, a:visited{
+    color: #646464;
+}
+*/
+
+/*      헤더      */
+
+#header {
+  position: relative;
+  width: 100%;
+  height: 85px;
+  background-color: #50403f;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.title {
+  position: absolute;
+  left: 100px;
+  color: antiquewhite;
+  cursor: pointer;
+}
+
+.login {
+  position: relative;
+  right: 40px;
+  border-style: none;
+  background-color: #50403f;
+  margin: 5px;
+  color: antiquewhite;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* #search{
+    border-bottom: 1px solid white;
+} */
+
+/*      네비게이션       */
+
+#nav {
+  /* position: relative; */
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid black;
+  background-color: #ebebeb;
+  text-align: right;
+  overflow: hidden;
+}
+#nav .menu {
+  float: right;
+  width: 350px;
+}
+.btn {
+  /* position: absolute; */
+  /* right: 175px; */
+  /* top: 7px; */
+  /* width: 80px; */
+  /* margin: 10px; */
+  margin: 0;
+  padding: 10px;
+  cursor: pointer;
+  font-family: "Nanum Gothic", "맑은 고딕", "Malgun Gothic", "돋움", Dotum,
+    "굴림", Gulim, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #5f5f5f;
+  font-size: 16px;
+  display: inline;
+  float: left;
+}
+/* 
+.btn:before {
+  content: "|";
+  padding-right: 0px;
+  font-weight: normal;
+  color: #5f5f5f;
+} */
+
+/* #nav span:nth-child(1):before {
+  content: "";
+} */
+
+.btn:hover {
+  filter: invert(100%);
+  text-decoration: underline;
+}
+#footer {
+  width: 85%;
+  height: 65px;
+  margin: 0 auto;
+  background-color: #d8dcda;
+  text-align: center;
+  color: darkslateblue;
+}

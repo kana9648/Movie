@@ -1,0 +1,72 @@
+/* 메인css */
+
+#search {
+  border-bottom: 1px solid white;
+}
+
+/*      메인   */
+
+#main {
+  position: relative;
+  width: 980px;
+  background-color: #ebebeb;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*  슬라이드    */
+
+ul,
+li {
+  list-style: none;
+}
+
+#side > ul > li > img {
+  position: absolute;
+  top: -16px;
+  overflow: hidden;
+}
+
+#side {
+  position: relative;
+  right: 170px;
+  top: 130px;
+  width: 220px;
+  height: 700px;
+  border: 1px solid;
+  float: right;
+}
+
+#section3 {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.readiframe {
+  margin-top: 20px;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  width: 360px;
+  /* float: left; */
+
+  height: 460px;
+  /* border: 1px solid; */
+}
+.freeiframe {
+  margin-top: 20px;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  width: 360px;
+  /* float: left; */
+
+  height: 460px;
+  /* border: 1px solid; */
+}
+
+#footer {
+  clear: both;
+}
+iframe {
+  margin-bottom: 40px;
+}

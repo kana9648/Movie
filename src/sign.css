@@ -1,0 +1,145 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+#mainlogo {
+  width: 960px;
+  height: 120px;
+}
+#sin {
+  width: 960px;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  /* border-left: 1px solid black; */
+  /* border-right: 1px solid black; */
+}
+#sin h1 {
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 1px solid #999;
+  width: 900px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+}
+#sin input {
+  width: 450px;
+  height: 45px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  font-size: 1.2em;
+  border-radius: 15px;
+}
+#sin label {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-left: 40px;
+  display: block;
+}
+#sin #Sub {
+  text-align: center;
+  clear: both;
+  margin-left: 40px;
+  border: 1px solid #bd7261;
+  border-radius: 20px;
+  background-color: #50403f;
+  color: antiquewhite;
+  font-size: 1.2em;
+}
+#sin #Sub:focus {
+  outline: none;
+}
+
+img {
+  position: absolute;
+  right: 30px;
+  top: 135px;
+  width: 400px;
+  height: 750px;
+}
+#notice {
+  width: 960px;
+  margin: 0 auto;
+  height: 100%;
+  /* border-left: 1px solid black; */
+  /* border-right: 1px solid black; */
+}
+#notice #agreeZone {
+  padding: 50px;
+  text-align: center;
+  height: 100%;
+}
+#agreeZone textarea {
+  display: inline;
+  width: 500px;
+  height: 100px;
+  margin-bottom: 0;
+  resize: none;
+}
+#agreeZone label {
+  display: block;
+  margin-top: 0;
+  position: relative;
+  top: -16px;
+}
+#agreeZone input {
+  display: block;
+  text-align: center;
+  margin-left: 370px;
+  margin-bottom: 0;
+}
+#agreeZone button {
+  width: 300px;
+  height: 50px;
+  border: 1px solid #bd7261;
+  border-radius: 20px;
+  background-color: #50403f;
+  color: antiquewhite;
+  font-size: 1.2em;
+}
+
+#agreeZone button:focus {
+  outline: none;
+}
+
+#com {
+  margin: 0 auto;
+  width: 960px;
+  text-align: center;
+}
+
+#com h1 {
+  margin-top: 200px;
+}
+
+#com label {
+  display: inline;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+#com input {
+  margin-bottom: 30px;
+  border-radius: 15px;
+  height: 40px;
+  width: 200px;
+}
+#com button {
+  width: 200px;
+  height: 50px;
+  margin-bottom: 200px;
+  border: 1px solid #bd7261;
+  border-radius: 20px;
+  background-color: #50403f;
+  color: antiquewhite;
+  font-size: 1.2em;
+}
+
+#com button:focus {
+  outline: none;
+}

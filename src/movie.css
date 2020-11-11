@@ -1,0 +1,42 @@
+#movielist {
+  margin: 0 auto;
+  width: 960px;
+  padding: 10px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+#moviezone {
+  border: 1px solid #999;
+  width: 220px;
+  background-image: url(../img/movie_list1.jpg);
+  background-repeat: no-repeat;
+  float: left;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  border: 3px solid #50403f;
+  border-radius: 15px;
+}
+#movieinfo {
+  /* border: 1px solid #999; */
+  width: 220px;
+  margin-top: 330px;
+  background-color: #50403f;
+  color: antiquewhite;
+  font-size: 0.7em;
+  border-bottom-left-radius: 11px;
+  border-bottom-right-radius: 11px;
+}
+#movieinfo button {
+  border-radius: 10px;
+  border: none;
+  margin-left: 80px;
+  margin-bottom: 10px;
+  /* text-align: center; */
+}
+#movieinfo button:focus {
+  outline: none;
+}
+#btnzone {
+  clear: both;
+  text-align: center;
+}
