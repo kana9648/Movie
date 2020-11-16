@@ -104,10 +104,10 @@
 .newszone button:focus {
   outline: none;
 }
-.newszone button:hover {
+/* .newszone button:hover {
   background-color: antiquewhite;
   color: #50403f;
-}
+} */
 button a {
   line-height: 40px;
   /* border: 1px solid; */
@@ -128,7 +128,7 @@ button a:active {
   text-decoration: none;
   color: antiquewhite;
 }
-button a:hover {
+/* button a:hover {
   background-color: antiquewhite;
   color: #50403f;
-}
+} */
