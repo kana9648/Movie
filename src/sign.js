@@ -57,6 +57,10 @@
     document.getElementById("com").style.display = "block";
     }
   }
+  function printName()  {
+    const name = document.getElementById('name').value;
+    document.getElementsByClassName("resultname").innerText = name;
+  }
 
     let num = Math.floor(Math.random() * 5)+1;
     let img = document.getElementById(`img`);

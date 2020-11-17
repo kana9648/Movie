@@ -221,7 +221,7 @@
           <h1>회원가입</h1>
 
           <label for="name">이름</label>
-          <input type="text" name="name" id="name" />
+          <input type="text" name="name" id="name" onchange="printName()" />
           <label for="date">생년월일</label>
           <input type="date" name="date" id="date" />
           <label for="ID">아이디 입력</label>
@@ -246,9 +246,19 @@
           <img src="../images/m1.jpg" id="img" />
         </div>
       </div>
+      <div id="midcheck">
+        <div id="info">
+          <h1>가입 정보</h1>
+          <h3>이름 : <span class="resultname"></span></h3>
+          <h3>생년월일 : <span class="resultdate"></span></h3>
+          <h3>아이디 : <span class="resultid"></span></h3>
+          <h3>비밀번호 : <span class="resultpw"></span></h3>
+          <h3>E-mail : <span class="resultemail"></span></h3>
+        </div>
+      </div>
       <div id="com">
         <div>
-          <h1>회원가입 완료</h1>
+          <h1><span class="resultname"></span> 님 회원가입 완료</h1>
           <label for="comID" style="margin-right: 42px">아이디</label>
           <input type="text" name="comID" id="comID" />
           <br />
