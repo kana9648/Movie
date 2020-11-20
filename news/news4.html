@@ -13,7 +13,7 @@
   <body>
     <div id="wrapper">
       <header id="header">
-        <h1 class="title"><a href="index.html" class="title">MOVIE</a></h1>
+        <h1 class="title"><a href="../main.html" class="title">MOVIE</a></h1>
         <button type="button" class="login">
           <a href="login.html">로그인</a>
         </button>
@@ -29,11 +29,9 @@
       </header>
       <nav id="nav">
         <div class="menu">
-          <span class="btn" onclick="board_1()">영화</span>
           <span class="btn" onclick="board_2()">리뷰</span>
-          <span class="btn"><a href="newsmain.html">읽을거리</a></span>
-          <span class="btn"><a href="../free/free.html">자유게시판</a></span>
-          <span class="btn">극장</span>
+          <span class="btn"><a href="news/newsmain.html">읽을거리</a></span>
+          <span class="btn" onclick="loc()">극장</span>
         </div>
       </nav>
       <div id="main">
@@ -102,5 +100,6 @@
       </div>
       <div id="footer"> footer </div>
     </div>
+    <script src="../js/link.js"></script>
   </body>
 </html>

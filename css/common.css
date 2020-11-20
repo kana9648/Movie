@@ -1,0 +1,139 @@
+ body{
+    padding:0;
+    margin:0;
+ }
+          
+ #wrapper{
+    overflow: hidden;
+    background-color: #fdfdfd;
+}
+
+
+/*  헤더  */
+
+#header{
+    position: relative;
+     width: 100%;
+    height: 85px;
+    background-color: #50403f;
+    margin: 0 auto;
+    text-align: right;
+}
+             
+.title{
+     position: absolute;
+     left:100px;
+    color: antiquewhite;
+    cursor: pointer;
+    
+}
+          
+.login{
+    position: relative;
+    right: 40px;
+    border-style: none;
+    background-color: #50403f;
+    margin: 5px;
+    color:antiquewhite;
+    font-weight:bold;
+    cursor: pointer;
+}
+
+#search{
+    border-bottom: 1px solid white;
+}
+
+
+/*      네비게이션       */
+            
+#nav{
+    position: relative;   
+    width:100%;
+    height: 40px;
+    border-bottom: 1px solid black;
+    background-color: #EBEBEB;
+    text-align: right;
+}
+          
+.btn{
+    position: relative;
+    right: 175px;
+    top:7px;
+    width: 80px;
+    margin: 10px;
+    cursor: pointer;
+    font-family:'Nanum Gothic','맑은 고딕','Malgun Gothic','돋움',Dotum,'굴림',Gulim,Helvetica,sans-serif;
+    font-weight: bold;
+    color:#5F5F5F;
+    font-size: 16px;
+}
+
+.btn:before{
+    content: "|";
+    padding-right: 15px; 
+    font-weight: normal;
+    color: #5F5F5F;
+}
+
+#nav span:nth-child(1):before{
+    content: "";
+}
+
+.btn:hover{
+    text-decoration: underline;
+}
+
+
+/*  메인  */
+
+#main{
+    position: relative;
+    width: 980px;        
+    background-color: #EBEBEB;
+    margin: 0 auto; 
+}
+
+
+/*      푸터      */
+         
+#footer{     
+    width: 85%;
+    height: 65px;
+    margin: 0 auto;
+    background-color: #d8dcda;  
+    text-align: center;
+    color:darkslateblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
