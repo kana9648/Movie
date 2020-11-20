@@ -2,6 +2,7 @@
   window.onload = function () {
     document.getElementById("notice").style.display = "block";
     document.getElementById("register").style.display = "none";
+    // document.getElementById("midcheck").style.display = "none";
     document.getElementById("com").style.display = "none";
   };
 
@@ -14,6 +15,7 @@
     if (agree_1 && agree_2 && agree_3) {
       document.getElementById("notice").style.display = "none";
       document.getElementById("register").style.display = "block";
+      // document.getElementById("midcheck").style.display = "none";
       document.getElementById("com").style.display = "none";
     } else {
       alert("모두 동의해야 가입할 수 있습니다.");
@@ -30,6 +32,12 @@
     let exptext = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/;
     let checkNumber = pass_1.search(/[0-9]/g);
     let checkEnglish = pass_1.search(/[a-z]/gi);
+
+    // document.getElementById("resultname").innerText = name;
+    // document.getElementById("resultdate").innerText = date;
+    // document.getElementById("resultid").innerText = id;
+    // document.getElementById("resultpw").innerText = pass_1;
+    // document.getElementById("resultemail").innerText = email;
 
     if (pass_1 != pass_2) {
       alert("비밀번호가 일치하지 않습니다.");
@@ -54,9 +62,13 @@
     }else{
     document.getElementById("notice").style.display = "none";
     document.getElementById("register").style.display = "none";
+    // document.getElementById("midcheck").style.display = "block";
     document.getElementById("com").style.display = "block";
     }
   }
+
+
+
   function printName()  {
     const name = document.getElementById('name').value;
     document.getElementsByClassName("resultname").innerText = name;
