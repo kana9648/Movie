@@ -132,3 +132,15 @@ button a:active {
   background-color: antiquewhite;
   color: #50403f;
 } */
+#news {
+  /* padding: 0%; */
+  margin: 0 auto;
+  border-top: #50403f 1px solid;
+  margin-top: 30px;
+}
+#news td,
+th {
+  border-bottom: 1px solid #50403f;
+  padding: 10px;
+  text-align: center;
+}
