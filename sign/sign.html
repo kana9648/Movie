@@ -15,7 +15,23 @@
         <button type="button" class="login">
           <a href="../login/login.html">로그인</a>
         </button>
+        <button type="button" class="login">
+          <a href="sign.html">회원가입</a>
+        </button>
+        <input
+          type="search"
+          id="search"
+          class="login"
+          placeholder="검색어를 입력"
+        />
       </header>
+      <nav id="nav">
+        <div class="menu">
+          <span class="btn" onclick="board_2()">리뷰</span>
+          <span class="btn"><a href="../news/newsmain.html">읽을거리</a></span>
+          <span class="btn" onclick="loc()">극장</span>
+        </div>
+      </nav>
       <!--동의-->
       <div id="notice">
         <div id="agreeZone">
@@ -261,5 +277,6 @@
       <div id="footer"></div>
     </div>
     <script src="../src/sign.js"></script>
+    <script src="../js/link.js"></script>
   </body>
 </html>
