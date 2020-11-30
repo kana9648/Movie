@@ -124,14 +124,23 @@
       tr:first-child td {
         border-top: 1px solid;
       }
-      #agree tr td:nth-child(2) {
-        text-align: center;
+      #agree tr td {
+        /* text-align: center; */
         /* background: #50403f; */
         border-left: 1px solid;
         border-right: 1px solid;
       }
+      /* #agree td:nth-child(2n) {
+        text-align: left;
+      } */
+      #a {
+        margin-left: 0;
+      }
 
-      #agree tr td {
+      #tx {
+        text-align: center;
+      }
+      #agree #agreebtnzone {
         text-align: center;
       }
       #agree th {
@@ -139,15 +148,17 @@
         color: antiquewhite;
         font-size: 1.5em;
       }
+
       textarea {
-        text-align: left;
-      }
-      textarea {
-        display: inline;
-        width: 880px;
+        display: inline-block;
+        box-sizing: border-box;
+        width: 95%;
         height: 300px;
-        margin-bottom: 0;
+
         resize: none;
+      }
+      #sin table {
+        width: 500px;
       }
       #sin tr td:nth-child(1) {
         text-align: center;
@@ -189,6 +200,9 @@
         border-radius: 15px;
         color: antiquewhite;
       }
+      input[type="checkbox"] {
+        /* margin: 0; */
+      }
     </style>
   </head>
   <body>
@@ -217,9 +231,12 @@
     <div id="main">
       <div id="agree">
         <table cellspacing="0">
-          <th colspan="2">개인정보수집 안내</th>
+          <th colspan="1">개인정보수집 안내</th>
           <tr>
-            <td>
+            <td id="a"><input type="checkbox" id="agree_1" /></td>
+          </tr>
+          <tr>
+            <td id="tx">
               <textarea readonly="readonly" text-align="left">
  제1조(목적) 이 약관은 OO 회사(전자상거래 사업자)가 운영하는 OO 사이버 몰(이하 “몰”이라 한다)에서 제공하는 인터넷 관련 서비스(이하 “서비스”라 한다)를 이용함에 있어 사이버 몰과 이용자의 권리․의무 및 책임사항을 규정함을 목적으로 합니다.
 
@@ -284,10 +301,12 @@
                             </textarea
               >
             </td>
-            <td><input type="checkbox" id="agree_1" /></td>
           </tr>
           <tr>
-            <td>
+            <td id="a"><input type="checkbox" id="agree_2" /></td>
+          </tr>
+          <tr>
+            <td id="tx">
               <textarea readonly="readonly" text-align="left">
  
  제9조(구매신청 및 개인정보 제공 동의 등)
@@ -357,10 +376,12 @@
  ④ 이용자가 재화 등을 제공받을 때 발송비를 부담한 경우에 “몰”은 청약철회 시 그 비용을  누가 부담하는지를 이용자가 알기 쉽도록 명확하게 표시합니다.</textarea
               >
             </td>
-            <td><input type="checkbox" id="agree_2" /></td>
           </tr>
           <tr>
-            <td>
+            <td id="a"><input type="checkbox" id="agree_3" /></td>
+          </tr>
+          <tr>
+            <td id="tx">
               <textarea readonly="readonly">
  제17조(개인정보보호)
  
@@ -420,10 +441,9 @@
  ② “몰”과 이용자 간에 제기된 전자상거래 소송에는 한국법을 적용합니다.</textarea
               >
             </td>
-            <td><input type="checkbox" id="agree_3" /></td>
           </tr>
           <tr>
-            <td colspan="2">
+            <td id="agreebtnzone" colspan="1">
               <input
                 type="submit"
                 name="agree"
@@ -439,7 +459,14 @@
         <table cellspacing="0">
           <tr>
             <td><label for="ID">아이디</label></td>
-            <td><input type="text" name="ID" id="ID" /><br /> </td>
+            <td
+              ><input type="text" name="ID" id="ID" />
+              <input
+                type="button"
+                value="아이디 중복 확인"
+                onclick="idCheck(this.value)"
+              />
+            </td>
           </tr>
           <tr>
             <td><label for="PW">비밀번호</label></td>
@@ -460,6 +487,10 @@
             <td><input type="password" name="PWC" id="PWC" /></td>
           </tr>
           <tr>
+            <td><label for="Email">E-mail</label></td>
+            <td><input type="text" name="Email" id="Email" /></td>
+          </tr>
+          <tr>
             <td><label for="Name">이름</label></td>
             <td><input type="text" name="Name" id="Name" /> </td>
           </tr>
@@ -468,8 +499,32 @@
             <td><input type="date" name="date" id="date" /> </td>
           </tr>
           <tr>
-            <td><label for="Email">E-mail</label></td>
-            <td><input type="text" name="Email" id="Email" /></td>
+            <td>우편번호</td>
+            <td>
+              <!-- 주소와 우편번호를 입력할 <input>들을 생성하고 적당한 name과 class를 부여한다 -->
+
+              <input
+                type="text"
+                name=""
+                class="postcodify_postcode5"
+                value="우편번호"
+              />
+              <button id="postcodify_search_button">검색</button><br />
+
+              <input
+                type="text"
+                name=""
+                class="postcodify_address"
+                value="주소"
+              /><br />
+
+              <input
+                type="text"
+                name=""
+                class="postcodify_details"
+                value="상세주소"
+              /><br />ㄴ
+            </td>
           </tr>
           <tr>
             <td colspan="2"
@@ -483,33 +538,34 @@
           </tr>
         </table>
       </div>
-      <div id="com">
-        <table cellspacing="0" style="margin-top: 100px">
-          <tr>
-            <td><label for="ID">아이디</label></td>
-            <td><input type="text" name="ID" id="ID" /><br /> </td>
-          </tr>
-          <tr>
-            <td><label for="PW">비밀번호</label></td>
-            <td><input type="password" name="PW" id="PW" /></td>
-          </tr>
-          <tr>
-            <td colspan="2"
-              ><input type="submit" name="login" id="login" value="로그인"
-            /></td>
-          </tr>
-        </table>
-      </div>
     </div>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript">
+      function idCheck(id) {
+        let ID = document.getElementById("ID").value;
+        if (ID == "") {
+          alert("아이디를 입력해 주세요.");
+          ID.focus();
+          return;
+        }
+        url = "idCheck.jsp?id=" + id;
+        window.open(url, "IDCheck", "width=300,height=150");
+      }
+
+      function zipSearch() {
+        url = "zipSearch.jsp?search=n";
+        window.open(
+          url,
+          "ZipCodeSearch",
+          "width=500,height=300,scrollbars=yes"
+        );
+      }
+    </script>
     <script>
       // 페이지 로드시, 안내문만 보이도록 설정
       window.onload = function () {
         document.getElementById("agree").style.display = "block";
-        // document.getElementById("agree").style.display = "none";
         document.getElementById("sin").style.display = "none";
-        // document.getElementById("midcheck").style.display = "none";
-        document.getElementById("com").style.display = "none";
-        // document.getElementById("com").style.display = "block";
       };
 
       // 동의를 모두 체크했는지 확인
@@ -521,8 +577,6 @@
         if (agree_1 && agree_2 && agree_3) {
           document.getElementById("agree").style.display = "none";
           document.getElementById("sin").style.display = "block";
-          // document.getElementById("midcheck").style.display = "none";
-          document.getElementById("com").style.display = "none";
         } else {
           alert("모두 동의해야 가입할 수 있습니다.");
         }
@@ -538,12 +592,6 @@
         let exptext = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/;
         let checkNumber = pass_1.search(/[0-9]/g);
         let checkEnglish = pass_1.search(/[a-z]/gi);
-
-        // document.getElementById("resultname").innerText = name;
-        // document.getElementById("resultdate").innerText = date;
-        // document.getElementById("resultid").innerText = id;
-        // document.getElementById("resultpw").innerText = pass_1;
-        // document.getElementById("resultemail").innerText = email;
 
         if (pass_1 != pass_2) {
           alert("비밀번호가 일치하지 않습니다.");
@@ -567,11 +615,6 @@
           alert("비밀번호는 같은 문자를 4번 이상 사용하실 수 없습니다.");
         } else if (pass_1.search(id) > -1) {
           alert("비밀번호에 아이디가 포함되었습니다.");
-        } else {
-          document.getElementById("agree").style.display = "none";
-          document.getElementById("sin").style.display = "none";
-          // document.getElementById("midcheck").style.display = "block";
-          document.getElementById("com").style.display = "block";
         }
       }
     </script>
