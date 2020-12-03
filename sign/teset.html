@@ -1,19 +1,13 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <!-- 주소와 우편번호를 입력할 <input>들을 생성하고 적당한 name과 class를 부여한다 -->
-    <input type="text" name="" class="postcodify_postcode5" value="" />
-    <button id="postcodify_search_button">검색</button><br />
-    <input type="text" name="" class="postcodify_address" value="" /><br />
-    <input type="text" name="" class="postcodify_details" value="" /><br />
-    <input type="text" name="" class="postcodify_extra_info" value="" /><br />
-
-    <!-- jQuery와 Postcodify를 로딩한다 -->
+    <title>회원가입</title>
+    <link rel="stylesheet" href="sign.css" />
+    <link rel="stylesheet" href="all.css" />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="//d1p7wdleee1q2z.cloudfront.net/post/search.min.js"></script>
 
@@ -23,5 +17,123 @@
         $("#postcodify_search_button").postcodifyPopUp();
       });
     </script>
+  </head>
+  <body>
+    <header id="header">
+      <h1 class="title"><a href="../main.html" class="title">MOVIE</a></h1>
+      <button type="button" class="login">
+        <a href="../login/login.html">로그인</a>
+      </button>
+      <button type="button" class="login">
+        <a href="sign.html">회원가입</a>
+      </button>
+      <input
+        type="search"
+        id="search"
+        class="login"
+        placeholder="검색어를 입력"
+      />
+    </header>
+    <nav id="nav">
+      <div class="menu">
+        <span class="btn" onclick="board_2()">리뷰</span>
+        <span class="btn"><a href="../news/newsmain.html">읽을거리</a></span>
+        <span class="btn" onclick="loc()">극장</span>
+      </div>
+    </nav>
+    <div id="main">
+      <div id="sin">
+        <form action="http://www.naver.com">
+          <!-- 주소와 우편번호를 입력할 <input>들을 생성하고 적당한 name과 class를 부여한다 -->
+          <input type="text" name="" class="postcodify_postcode5" value="" />
+        </form>
+        <input
+          id="postcodify_search_button"
+          type="button"
+          value="검색"
+        />검색<br />
+        <form>
+          <input
+            type="text"
+            name=""
+            class="postcodify_address"
+            value=""
+            readonly
+          /><br />
+          <input
+            type="text"
+            name=""
+            class="postcodify_details"
+            value=""
+          /><br />
+          <input
+            type="text"
+            name=""
+            class="postcodify_extra_info"
+            value=""
+          /><br />
+        </form>
+      </div>
+      <!-- jQuery와 Postcodify를 로딩한다 -->
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+      <script src="//d1p7wdleee1q2z.cloudfront.net/post/search.min.js"></script>
+
+      <!-- "검색" 단추를 누르면 팝업 레이어가 열리도록 설정한다 -->
+      <script>
+        $(function () {
+          $("#postcodify_search_button").postcodifyPopUp();
+        });
+      </script>
+      <script type="text/javascript" src="script.js"></script>
+      <script type="text/javascript">
+        //    function idCheck(id) {
+        //      let ID = document.getElementById("ID").value;
+        //      if (ID == "") {
+        //        alert("아이디를 입력해 주세요.");
+        //        ID.focus();
+        //        return;
+        //      }
+        //  url = "idCheck.jsp?id=" + id;
+        //    window.open(url, "IDCheck", "width=300,height=150");
+        //   }
+      </script>
+      <script>
+        function check() {
+          let pass_1 = document.getElementById("PW").value;
+          let pass_2 = document.getElementById("PWC").value;
+          let id = document.getElementById("ID").value;
+          let email = document.getElementById("Email").value;
+          let name = document.getElementById("Name").value;
+          let date = document.getElementById("date").value;
+          let exptext = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/;
+          let checkNumber = pass_1.search(/[0-9]/g);
+          let checkEnglish = pass_1.search(/[a-z]/gi);
+
+          if (pass_1 != pass_2) {
+            alert("비밀번호가 일치하지 않습니다.");
+          } else if (name == "") {
+            alert("이름을 입력하세요.");
+          } else if (date == "") {
+            alert("생년월일을 입력하세요");
+          } else if (id == "") {
+            alert("아이디를 입력하세요.");
+          } else if (email == "") {
+            alert("이메일을 입력하세요.");
+          } else if (exptext.test(email) == false) {
+            alert("이메일 형식이 틀립니다.");
+          } else if (!/^[a-zA-Z0-9]{8,15}$/.test(pass_1)) {
+            alert(
+              "비밀번호는 숫자와 영문자 조합으로 8~15자리를 사용해야 합니다."
+            );
+          } else if (checkNumber < 0 || checkEnglish < 0) {
+            alert("비밀번호는 숫자와 영문자를 혼용하여야 합니다.");
+          } else if (/(\w)\1\1\1/.test(pass_1)) {
+            alert("비밀번호는 같은 문자를 4번 이상 사용하실 수 없습니다.");
+          } else if (pass_1.search(id) > -1) {
+            alert("비밀번호에 아이디가 포함되었습니다.");
+          }
+        }
+      </script>
+    </div>
   </body>
 </html>

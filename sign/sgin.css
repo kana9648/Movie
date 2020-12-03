@@ -1,0 +1,195 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#wrapper {
+  overflow: hidden;
+  background-color: #fdfdfd;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #333;
+}
+#header {
+  position: relative;
+  width: 100%;
+  height: 85px;
+  background-color: #50403f;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.title {
+  position: absolute;
+  left: 100px;
+  color: antiquewhite;
+  cursor: pointer;
+}
+
+.login {
+  position: relative;
+  right: 40px;
+  border-style: none;
+  background-color: #50403f;
+  margin: 5px;
+  color: antiquewhite;
+  font-weight: bold;
+  cursor: pointer;
+}
+#nav {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid black;
+  background-color: #ebebeb;
+  text-align: right;
+}
+
+.btn {
+  position: relative;
+  right: 175px;
+  top: 7px;
+  width: 80px;
+  margin: 10px;
+  cursor: pointer;
+  font-family: "Nanum Gothic", "맑은 고딕", "Malgun Gothic", "돋움", Dotum,
+    "굴림", Gulim, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #5f5f5f;
+  font-size: 16px;
+}
+
+.btn:before {
+  content: "|";
+  padding-right: 15px;
+  font-weight: normal;
+  color: #5f5f5f;
+}
+
+#nav span:nth-child(1):before {
+  content: "";
+}
+
+.btn:hover {
+  filter: invert(100%);
+  text-decoration: underline;
+}
+button a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+button a:link {
+  text-decoration: none;
+  color: antiquewhite;
+}
+button a:visited {
+  text-decoration: none;
+  color: antiquewhite;
+}
+button a:active {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+#main {
+  margin-top: 20px;
+  width: 960px;
+  margin: 0 auto;
+  padding: 30px;
+}
+table {
+  width: 960px;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid;
+}
+
+tr:first-child td {
+  border-top: 1px solid;
+}
+#agree tr td {
+  /* text-align: center; */
+  /* background: #50403f; */
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+/* #agree td:nth-child(2n) {
+    text-align: left;
+  } */
+#a {
+  margin-left: 0;
+}
+
+#tx {
+  text-align: center;
+}
+#agree #agreebtnzone {
+  text-align: center;
+}
+#agree th {
+  background: #50403f;
+  color: antiquewhite;
+  font-size: 1.5em;
+}
+
+textarea {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 95%;
+  height: 300px;
+
+  resize: none;
+}
+#sin table {
+  width: 500px;
+}
+#sin tr td:nth-child(1) {
+  text-align: center;
+  background-color: #50403f56;
+}
+#sin ul {
+  padding-left: 0px;
+}
+
+#com table {
+  margin-top: 200px;
+  width: 500px;
+  margin: 0 auto;
+}
+#com tr td:nth-child(1) {
+  text-align: center;
+  background-color: #50403fd0;
+  color: antiquewhite;
+  font-size: 1.5em;
+}
+#com #login {
+  width: 150px;
+  height: 50px;
+  background-color: #50403f;
+  border-radius: 15px;
+  color: antiquewhite;
+}
+#sin #sub {
+  width: 150px;
+  height: 50px;
+  background-color: #50403f;
+  border-radius: 15px;
+  color: antiquewhite;
+}
+#agree #agreebtn {
+  width: 150px;
+  height: 50px;
+  background-color: #50403f;
+  border-radius: 15px;
+  color: antiquewhite;
+}
